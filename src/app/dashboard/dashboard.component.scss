@@ -145,32 +145,29 @@
   margin: 20px 20px 40px;
 }
 
-
 .page h1::after,
-.page h1::before{
+.page h1::before {
   content: "";
   position: absolute;
   height: 3px;
   bottom: -10px;
-  left: 0; 
+  left: 0;
 }
-.abc {
-  display: block;
-}
-.page h1::before{
+
+.page h1::before {
   background-color: white;
   width: 120px;
 }
 
-.page h1::after{
+.page h1::after {
   background-color: black;
   width: 40px;
 }
 
-.wraper{
+.wraper {
   gap: 20px;
 
-  .welcome{
+  .welcome {
     border-radius: 10px;
   }
 }
