@@ -166,8 +166,24 @@
 
 .wraper {
   gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  margin-right: 20px;
+  margin-left: 20px;
 
   .welcome {
     border-radius: 10px;
+    .intro{
+      padding: 20px;
+      background-color: #eee;
+    }
+  }
+}
+
+@media (max-width: 776px) {
+  .wraper {
+    grid-template-columns: minmax(200px, 1fr);
+    gap: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
