@@ -154,7 +154,9 @@
   bottom: -10px;
   left: 0; 
 }
-
+.abc {
+  display: block;
+}
 .page h1::before{
   background-color: white;
   width: 120px;
