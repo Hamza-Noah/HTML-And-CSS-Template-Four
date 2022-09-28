@@ -172,9 +172,24 @@
 
   .welcome {
     border-radius: 10px;
-    .intro{
+    .intro {
       padding: 20px;
-      background-color: #eee;
+    }
+    p {
+      color: $gray-color;
+      margin-top: 5px;
+    }
+  }
+
+  .body{
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+
+    span{
+      font-size: 14px;
+      color: $gray-color;
     }
   }
 }
