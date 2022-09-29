@@ -1,52 +1,5 @@
 <div class="page d-flex">
-    <div class="sidebar position-relative bg-white text-center">
-        <h3 class="position-relative text-center mt-0">Hamza</h3>
-        <ul class="p-0 list-unstyled">
-            <li>
-                <a class="active d-flex align-items-center text-dark" href="#"><i
-                        class="fa-regular fa-chart-bar fa-fw"></i>
-                    <span class="hide-mobile">Dashboard</span>
-                </a>
-            </li>
-            <li>
-                <a class="d-flex align-items-center text-dark" href="#">
-                    <i class="fa-sharp fa-solid fa-gear"></i>
-                    <span class="hide-mobile">Settings</span>
-                </a>
-            </li>
-            <li>
-                <a class="d-flex align-items-center text-dark" href="#"><i class="fa-regular fa-user"></i>
-                    <span class="hide-mobile">Profile</span>
-                </a>
-            </li>
-            <li>
-                <a class="d-flex align-items-center text-dark" href="#"><i class="fa-solid fa-diagram-project"></i>
-                    <span class="hide-mobile">Projects</span>
-                </a>
-            </li>
-            <li>
-                <a class="d-flex align-items-center text-dark" href="#"><i class="fa-solid fa-graduation-cap"></i>
-                    <span class="hide-mobile">Courses</span>
-                </a>
-            </li>
-            <li>
-                <a class="d-flex align-items-center text-dark" href="#"><i class="fa-solid fa-user-group"></i>
-                    <span class="hide-mobile">Friends</span>
-                </a>
-            </li>
-            <li>
-                <a class="d-flex align-items-center text-dark" href="#"><i class="fa-regular fa-file"></i>
-                    <span class="hide-mobile">Files</span>
-                </a>
-            </li>
-            <li>
-                <a class="d-flex align-items-center text-dark" href="#"><i class="fa-solid fa-credit-card"></i>
-                    <span class="hide-mobile">Plans</span>
-                </a>
-            </li>
-        </ul>
-
-    </div>
+    <app-sidebar class="d-flex"></app-sidebar>
     <div class="content w-100 overflow-hidden">
         <div class="head bg-white d-flex align-items-center justify-content-between">
             <div class="search position-relative">
@@ -63,28 +16,8 @@
             Dashboard
         </h1>
         <div class="wraper d-grid ">
-            <div class="welcome bg-white text-sm-center text-md-start d-sm-block d-md-">
-                <div class="intro d-flex justify-content-between">
-                    <div>
-                        <h2 class="m-0">
-                            welcome
-                        </h2>
-                        <p>
-                            Hamza
-                        </p>
-                    </div>
-                    <img src="https://via.placeholder.com/200/red" alt="">
-                </div>
-                <img class="avatar" src="https://via.placeholder.com/32" alt="img">
-                <div class="body text-center d-sm-block d-md-flex">
-                    <div>
-                        Hamaza Noah <span class="d-block">Developer</span>
-                    </div>
-                    <div>80 <span class="d-block">Projects</span></div>
-                    <div>8500$ <span class="d-block">Earned</span></div>
-                </div>
-                <a href="#" class="visit d-block fs-14 btn">Profile</a>
-            </div>
+            <app-welcom></app-welcom>
+            <app-quick-draft></app-quick-draft>
         </div>
     </div>
 </div>

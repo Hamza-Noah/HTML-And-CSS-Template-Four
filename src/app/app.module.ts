@@ -11,6 +11,9 @@ import { CoursesComponent } from './courses/courses.component';
 import { FriendsComponent } from './friends/friends.component';
 import { FilesComponent } from './files/files.component';
 import { PlansComponent } from './plans/plans.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { WelcomComponent } from './welcom/welcom.component';
+import { QuickDraftComponent } from './quick-draft/quick-draft.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { PlansComponent } from './plans/plans.component';
     CoursesComponent,
     FriendsComponent,
     FilesComponent,
-    PlansComponent
+    PlansComponent,
+    SidebarComponent,
+    WelcomComponent,
+    QuickDraftComponent
   ],
   imports: [
     BrowserModule,

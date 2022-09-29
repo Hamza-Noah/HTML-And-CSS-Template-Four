@@ -1,0 +1,83 @@
+@import "../../assets/variables.scss";
+
+.welcome {
+  overflow: hidden;
+  border-radius: 10px;
+  .intro {
+    padding: 20px;
+    background: #eee;
+  }
+
+  .intro img {
+    width: 200px;
+    margin-bottom: -10px;
+  }
+
+  p {
+    color: $gray-color;
+    margin-top: 5px;
+  }
+}
+
+.welcome .avatar {
+  width: 64px;
+  height: 64px;
+  padding: 2px;
+  margin-left: 20px;
+  margin-top: -32px;
+  border: 2px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #eee;
+}
+
+.welcome .body {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+
+  & > div {
+    flex: 1;
+  }
+
+  span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: $gray-color;
+  }
+}
+
+.welcome .visit {
+  margin: 0 15px 15px auto;
+  width: fit-content;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: $blue-color;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $blue-alt-color;
+  }
+}
+
+@media (max-width: 767px) {
+  .welcome .intro {
+    padding-bottom: 30px;
+
+    img {
+      display: none;
+    }
+  }
+
+  .avatar {
+    margin-left: 0 !important;
+  }
+
+  .welcome {
+    .body > div:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

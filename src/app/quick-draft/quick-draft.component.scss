@@ -1,0 +1,49 @@
+@import "../../assets/variables.scss";
+
+.quick-draft {
+  padding: 20px;
+  border-radius: 20px;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    color: $gray-color;
+    font-size: 15px;
+  }
+
+  input:first-child,
+  textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    background-color: #eee;
+  }
+
+  textarea {
+    min-height: 180px;
+  }
+
+  input[type="submit"] {
+    width: fit-content;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: auto;
+    background-color: $blue-color;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  input[type="submit"]:hover {
+    background-color: $blue-alt-color;
+  }
+}
+
+@media (max-width: 767px) {
+  .quick-draft {
+    text-align: center;
+  }
+}
