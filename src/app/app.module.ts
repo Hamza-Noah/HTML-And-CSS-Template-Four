@@ -14,6 +14,7 @@ import { PlansComponent } from './plans/plans.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { WelcomComponent } from './welcom/welcom.component';
 import { QuickDraftComponent } from './quick-draft/quick-draft.component';
+import { TagetsWidgetComponent } from './tagets-widget/tagets-widget.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { QuickDraftComponent } from './quick-draft/quick-draft.component';
     PlansComponent,
     SidebarComponent,
     WelcomComponent,
-    QuickDraftComponent
+    QuickDraftComponent,
+    TagetsWidgetComponent
   ],
   imports: [
     BrowserModule,
