@@ -12,7 +12,7 @@ import { FriendsComponent } from './friends/friends.component';
 import { FilesComponent } from './files/files.component';
 import { PlansComponent } from './plans/plans.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { WelcomComponent } from './welcom/welcom.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 import { QuickDraftComponent } from './quick-draft/quick-draft.component';
 import { TagetsWidgetComponent } from './tagets-widget/tagets-widget.component';
 
@@ -28,7 +28,7 @@ import { TagetsWidgetComponent } from './tagets-widget/tagets-widget.component';
     FilesComponent,
     PlansComponent,
     SidebarComponent,
-    WelcomComponent,
+    WelcomeComponent,
     QuickDraftComponent,
     TagetsWidgetComponent
   ],
