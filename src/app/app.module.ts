@@ -17,6 +17,7 @@ import { QuickDraftComponent } from './quick-draft/quick-draft.component';
 import { TagetsWidgetComponent } from './tagets-widget/tagets-widget.component';
 import { TweetStatisticsComponent } from './tweet-statistics/tweet-statistics.component';
 import { LatestNewsComponent } from './latest-news/latest-news.component';
+import { TasksWidgetComponent } from './tasks-widget/tasks-widget.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { LatestNewsComponent } from './latest-news/latest-news.component';
     QuickDraftComponent,
     TagetsWidgetComponent,
     TweetStatisticsComponent,
-    LatestNewsComponent
+    LatestNewsComponent,
+    TasksWidgetComponent
   ],
   imports: [
     BrowserModule,

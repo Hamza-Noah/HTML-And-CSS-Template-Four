@@ -1,0 +1,41 @@
+.tasks {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .task-row:not(:last-of-type) {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .info {
+    flex-grow: 1;
+    h3 {
+      margin-bottom: 5px;
+      font-size: 15px;
+    }
+  }
+
+  .done {
+    opacity: 0.3;
+  }
+
+  .done h3,
+  .done p {
+    text-decoration: line-through;
+  }
+
+  .delete {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .delete:hover {
+    color: var(--red-color);
+  }
+}
