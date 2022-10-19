@@ -15,6 +15,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { QuickDraftComponent } from './quick-draft/quick-draft.component';
 import { TagetsWidgetComponent } from './tagets-widget/tagets-widget.component';
+import { TweetStatisticsComponent } from './tweet-statistics/tweet-statistics.component';
+import { LatestNewsComponent } from './latest-news/latest-news.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { TagetsWidgetComponent } from './tagets-widget/tagets-widget.component';
     SidebarComponent,
     WelcomeComponent,
     QuickDraftComponent,
-    TagetsWidgetComponent
+    TagetsWidgetComponent,
+    TweetStatisticsComponent,
+    LatestNewsComponent
   ],
   imports: [
     BrowserModule,

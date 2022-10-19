@@ -1,0 +1,61 @@
+@import "../../assets/variables.scss";
+
+.tickets {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    color: $gray-color;
+    font-size: 15px;
+  }
+
+  & > div {
+    gap: 20px;
+    flex-flow: wrap;
+  }
+
+  .box {
+    width: calc(50% - 10px);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    color: $gray-color;
+    i {
+      margin-bottom: 10px;
+    }
+
+    span {
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .box:first-child i {
+    color: $orang-color;
+  }
+
+  .box:nth-child(2) i {
+    color: $blue-color;
+  }
+
+  .box:nth-child(3) i {
+    color: $blue-color;
+  }
+
+  .box:last-child i {
+    color: $red-color;
+  }
+
+  @media (max-width: 767px) {
+    .box {
+      width: 100%;
+    }
+  }
+}
