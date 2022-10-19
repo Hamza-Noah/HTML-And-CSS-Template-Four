@@ -18,6 +18,7 @@ import { TagetsWidgetComponent } from './tagets-widget/tagets-widget.component';
 import { TweetStatisticsComponent } from './tweet-statistics/tweet-statistics.component';
 import { LatestNewsComponent } from './latest-news/latest-news.component';
 import { TasksWidgetComponent } from './tasks-widget/tasks-widget.component';
+import { TopSearchWidgetComponent } from './top-search-widget/top-search-widget.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { TasksWidgetComponent } from './tasks-widget/tasks-widget.component';
     TagetsWidgetComponent,
     TweetStatisticsComponent,
     LatestNewsComponent,
-    TasksWidgetComponent
+    TasksWidgetComponent,
+    TopSearchWidgetComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,27 @@
+@import "../../assets/variables.scss";
+
+.search-items {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .items-head {
+    margin-bottom: 10px;
+    color: $gray-color;
+  }
+
+  .items {
+    padding: 15px 0;
+
+    .btn-shape {
+      padding: 4px 10px;
+      border-radius: 6px;
+      background-color: #eee;
+      font-size: 13px;
+    }
+  }
+}
