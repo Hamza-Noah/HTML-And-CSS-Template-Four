@@ -1,95 +1,9 @@
 @import "../../assets/variables.scss";
 
-.page {
-  min-height: 100vh;
-  background-color: #f1f5f9;
-}
-
-// Start Head
-
-.head {
-  padding: 15px;
-
-  .search {
-    input[type="search"] {
-      margin-left: 5px;
-      padding: 10px 10px 10px 30px;
-      border: 1px #ccc solid;
-      border-radius: 10px;
-      width: 160px;
-      transition: width 0.3s ease-in-out;
-    }
-
-    input[type="search"]:focus {
-      outline-color: red;
-      width: 200px;
-    }
-
-    input[type="search"]:focus::placeholder {
-      opacity: 0;
-    }
-  }
-
-  .search::before {
-    content: "\f002";
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 14px;
-    font-family: var(--fa-style-family-classic);
-    font-weight: 900;
-    color: $gray-color;
-  }
-
-  .icons {
-    .notification::before {
-      content: "";
-      position: absolute;
-      right: -5px;
-      top: -5px;
-      width: 10px;
-      height: 10px;
-      background-color: $red-color;
-      border-radius: 50%;
-    }
-
-    img {
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      margin-left: 15px;
-    }
-  }
-}
-
-.page h1 {
-  margin: 20px 20px 40px;
-}
-
-.page h1::after,
-.page h1::before {
-  content: "";
-  position: absolute;
-  height: 3px;
-  bottom: -10px;
-  left: 0;
-}
-
-.page h1::before {
-  background-color: white;
-  width: 120px;
-}
-
-.page h1::after {
-  background-color: black;
-  width: 40px;
-}
-
 .wraper {
   gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-  margin: 0 20px 20px 20px
+  margin: 0 20px 20px 20px;
 }
 
 @media (max-width: 767px) {

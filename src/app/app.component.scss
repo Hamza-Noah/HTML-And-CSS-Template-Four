@@ -1,37 +1,119 @@
-body{
-  background: #0B2429;
-  
+@import "../assets/variables.scss";
+
+body {
+  background: #0b2429;
 }
 
-div {
-  position: relative;
-  top: 127;
-  margin: auto;
-  width: 100;
-  height: 100;
-  background: #F3AC3C;
-  transform: rotate(45deg)
-  
-}
+.page {
+  min-height: 100vh;
+  background-color: #f1f5f9;
 
-  div:after, div:before{
+  // > div {
+  //   position: relative;
+  //   top: 127;
+  //   margin: auto;
+  //   width: 100;
+  //   height: 100;
+  //   background: #f3ac3c;
+  //   transform: rotate(45deg);
+  // }
+
+  > div:after,
+  div:before {
     content: "";
     position: absolute;
-    
   }
 
-  div:after{
-    background: #1A4341;
+  > div:after {
+    background: #1a4341;
     transform: translate(-25%, -100%) skewX(45deg);
     width: 100;
-    height: 50
+    height: 50;
   }
 
-  
-  div:before{
+  > div:before {
     background: #998235;
-        transform: translate(-100%, -25%) skewY(45deg);
+    transform: translate(-100%, -25%) skewY(45deg);
     width: 50;
-    height: 100
+    height: 100;
   }
-  
+
+  .head {
+    padding: 15px;
+
+    .search {
+      input[type="search"] {
+        margin-left: 5px;
+        padding: 10px 10px 10px 30px;
+        border: 1px #ccc solid;
+        border-radius: 10px;
+        width: 160px;
+        transition: width 0.3s ease-in-out;
+      }
+
+      input[type="search"]:focus {
+        outline-color: red;
+        width: 200px;
+      }
+
+      input[type="search"]:focus::placeholder {
+        opacity: 0;
+      }
+    }
+
+    .search::before {
+      content: "\f002";
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 14px;
+      font-family: var(--fa-style-family-classic);
+      font-weight: 900;
+      color: $gray-color;
+    }
+
+    .icons {
+      .notification::before {
+        content: "";
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        width: 10px;
+        height: 10px;
+        background-color: $red-color;
+        border-radius: 50%;
+      }
+
+      img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin-left: 15px;
+      }
+    }
+  }
+
+  h1 {
+    margin: 20px 20px 40px;
+  }
+
+  h1::after,
+  h1::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    bottom: -10px;
+    left: 0;
+  }
+
+  h1::before {
+    background-color: white;
+    width: 120px;
+  }
+
+  h1::after {
+    background-color: black;
+    width: 40px;
+  }
+}
