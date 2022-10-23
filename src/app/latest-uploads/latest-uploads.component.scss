@@ -1,17 +1,47 @@
+@import "../../assets/variables.scss";
+
 .latest-uploads {
   padding: 20px;
   background-color: white;
   border-radius: 10px;
-  ul li:not(:last-child) {
-    border-bottom: 1px solid #eee;
 
-    h2 {
-      margin-bottom: 20px;
-    }
-}
+  h2 {
+    margin-bottom: 20px;
+  }
 
-    ul li img {
-      width: 40px;
-      height: 40px;
+  ul {
+    li {
+      padding-bottom: 10px;
+      margin-bottom: 10px;
     }
+
+    li img {
+      margin-right: 10px;
+    }
+
+    li .name {
+      font-size: 15px;
+      color: $gray-color;
+    }
+
+    li > div:last-child {
+      background-color: #eee;
+      font-size: 13px;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+
+    li:not(:last-child) {
+      border-bottom: 1px solid #eee;
+
+      h2 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  ul li img {
+    width: 40px;
+    height: 40px;
+  }
 }
