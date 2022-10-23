@@ -20,6 +20,7 @@ import { LatestNewsComponent } from './latest-news/latest-news.component';
 import { TasksWidgetComponent } from './tasks-widget/tasks-widget.component';
 import { TopSearchWidgetComponent } from './top-search-widget/top-search-widget.component';
 import { LatestUploadsComponent } from './latest-uploads/latest-uploads.component';
+import { LastProgressProjectComponent } from './last-progress-project/last-progress-project.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { LatestUploadsComponent } from './latest-uploads/latest-uploads.componen
     LatestNewsComponent,
     TasksWidgetComponent,
     TopSearchWidgetComponent,
-    LatestUploadsComponent
+    LatestUploadsComponent,
+    LastProgressProjectComponent
   ],
   imports: [
     BrowserModule,
