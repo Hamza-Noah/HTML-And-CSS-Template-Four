@@ -34,10 +34,15 @@
     .rating {
       margin-top: 10px;
       margin-bottom: 10px;
-      i{
-        // c-orange fs-13
+      i {
         color: $orang-color;
-        font-size: 13px; 
+        font-size: 13px;
+      }
+    }
+
+    .info-box {
+      .box {
+        padding: 20px;
       }
     }
   }
