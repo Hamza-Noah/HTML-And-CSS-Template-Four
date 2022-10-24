@@ -4,25 +4,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { SetteingsComponent } from './setteings/setteings.component';
-import { ProfileComponent } from './profile/profile.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { CoursesComponent } from './courses/courses.component';
-import { FriendsComponent } from './friends/friends.component';
-import { FilesComponent } from './files/files.component';
-import { PlansComponent } from './plans/plans.component';
+import { SetteingsComponent } from './dashboard/setteings/setteings.component';
+import { ProfileComponent } from './dashboard/profile/profile.component';
+import { ProjectsComponent } from './dashboard/projects/projects.component';
+import { CoursesComponent } from './dashboard/courses/courses.component';
+import { FriendsComponent } from './dashboard/friends/friends.component';
+import { FilesComponent } from './dashboard/files/files.component';
+import { PlansComponent } from './dashboard/plans/plans.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { WelcomeComponent } from './welcome/welcome.component';
-import { QuickDraftComponent } from './quick-draft/quick-draft.component';
-import { TagetsWidgetComponent } from './tagets-widget/tagets-widget.component';
-import { TweetStatisticsComponent } from './tweet-statistics/tweet-statistics.component';
-import { LatestNewsComponent } from './latest-news/latest-news.component';
-import { TasksWidgetComponent } from './tasks-widget/tasks-widget.component';
-import { TopSearchWidgetComponent } from './top-search-widget/top-search-widget.component';
-import { LatestUploadsComponent } from './latest-uploads/latest-uploads.component';
-import { LastProgressProjectComponent } from './last-progress-project/last-progress-project.component';
+import { WelcomeComponent } from './dashboard/welcome/welcome.component';
+import { QuickDraftComponent } from './dashboard/quick-draft/quick-draft.component';
+import { TagetsWidgetComponent } from './dashboard/tagets-widget/tagets-widget.component';
+import { TweetStatisticsComponent } from './dashboard/tweet-statistics/tweet-statistics.component';
+import { LatestNewsComponent } from './dashboard/latest-news/latest-news.component';
+import { TasksWidgetComponent } from './dashboard/tasks-widget/tasks-widget.component';
+import { TopSearchWidgetComponent } from './dashboard/top-search-widget/top-search-widget.component';
+import { LatestUploadsComponent } from './dashboard/latest-uploads/latest-uploads.component';
+import { LastProgressProjectComponent } from './dashboard/last-progress-project/last-progress-project.component';
 import { SettingsPageComponent } from './settings-page/settings-page.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
+import { ProjectsPageComponent } from './projects-page/projects-page.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
     LatestUploadsComponent,
     LastProgressProjectComponent,
     SettingsPageComponent,
-    ProfilePageComponent
+    ProfilePageComponent,
+    ProjectsPageComponent
   ],
   imports: [
     BrowserModule,
