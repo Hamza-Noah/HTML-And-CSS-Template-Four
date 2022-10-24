@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 :root {
   --blue-color: #0075ff;
   --blue-alt-color: #0d69d5;
@@ -47,7 +49,7 @@
 .toggle-checkbox:checked + .toggle-switch::before {
   content: "\f00c";
   left: 50px;
-  color: var(--blue-color);
+  color: $blue-color;
 }
 
 // start teporarily frameworkgreen-colo
@@ -174,28 +176,28 @@
   color: var(--grey-color);
 }
 .c-red {
-  color: var(--red-color);
+  color: $red-color;
 }
 .c-green {
-  color: var(--green-color);
+  color: $green-color;
 }
 .c-blue {
-  color: var(--blue-color);
+  color: $blue-color;
 }
 .c-orange {
-  color: var(--orange-color);
+  color: $orang-color;
 }
 .bg-red {
-  background-color: var(--red-color);
+  background-color: $red-color;
 }
 .bg-green {
-  background-color: var(--green-color);
+  background-color: $green-color;
 }
 .bg-blue {
-  background-color: var(--blue-color);
+  background-color: $blue-color;
 }
 .bg-orange {
-  background-color: var(--orange-color);
+  background-color: $orang-color;
 }
 .bg-white {
   background-color: white;
