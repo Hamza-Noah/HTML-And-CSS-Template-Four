@@ -21,7 +21,7 @@ import { TasksWidgetComponent } from './tasks-widget/tasks-widget.component';
 import { TopSearchWidgetComponent } from './top-search-widget/top-search-widget.component';
 import { LatestUploadsComponent } from './latest-uploads/latest-uploads.component';
 import { LastProgressProjectComponent } from './last-progress-project/last-progress-project.component';
-import { SettingsComponent } from './settings/settings.component';
+import { SettingsPageComponent } from './settings-page/settings-page.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 @NgModule({
@@ -45,7 +45,7 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
     TopSearchWidgetComponent,
     LatestUploadsComponent,
     LastProgressProjectComponent,
-    SettingsComponent,
+    SettingsPageComponent,
     ProfilePageComponent
   ],
   imports: [
