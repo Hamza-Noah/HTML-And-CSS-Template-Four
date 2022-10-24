@@ -24,6 +24,7 @@ import { LastProgressProjectComponent } from './dashboard/last-progress-project/
 import { SettingsPageComponent } from './settings-page/settings-page.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
+import { ProjectsTableComponent } from './dashboard/projects-table/projects-table.component';
 
 @NgModule({
   declarations: [
@@ -48,8 +49,10 @@ import { ProjectsPageComponent } from './projects-page/projects-page.component';
     LastProgressProjectComponent,
     SettingsPageComponent,
     ProfilePageComponent,
-    ProjectsPageComponent
+    ProjectsPageComponent,
+    ProjectsTableComponent
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule
@@ -57,4 +60,5 @@ import { ProjectsPageComponent } from './projects-page/projects-page.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
