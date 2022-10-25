@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Employees } from 'src/app/employees';
+import { Employees } from 'src/app/interfaces/employees';
 
 
 
@@ -14,27 +14,28 @@ export class ProjectsTableComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    Date.now;
   }
 
-  employees: Employees[] = [
-    { name: "Ministry Wikipedia", finishDate: "10 May 2022", client: "Ministry", price: "$5300", status: "Pending" },
-    { name: "Elzero Shop", finishDate: "12 Oct 2021", client: "Elzero Company", price: "$1500", status: "In Progress" },
-    { name: "Bouba App", finishDate: "105 Sep 2021", client: "Bouba", price: "$800", status: "Completed" },
-    { name: "Mahmoud Website", finishDate: "22 May 2021	", client: "Mahmoud", price: "$600", status: "Completed" },
-    { name: "Sayed Website", finishDate: "	24 May 2021", client: "Sayed", price: "	$300", status: "Rejected" },
-    { name: "Arena Application", finishDate: "01 Mar 2021", client: "	Arena Company", price: "$2600", status: "Completed" },
-  ]
+  path: string = "./assets/images/";
 
+  employees: Employees[] = [
+    { name: "Ministry Wikipedia", finishDate: new Date(2022, 10, 1), client: "Ministry", price: "$5300", teams: ["team-01.png", "team-02.png", "team-03.png", "team-05.png"], status: "Pending" },
+    { name: "Elzero Shop", finishDate: new Date(2022, 10, 4), client: "Elzero Company", price: "$1500", teams: ['team-01.png', 'team-02.png'], status: "In Progress" },
+    { name: "Bouba App", finishDate: new Date(2022, 10, 1), client: "Bouba", price: "$800", teams: ['team-01.png', 'team-02.png'], status: "Completed" },
+    { name: "Mahmoud Website", finishDate: new Date(2022, 10, 6), client: "Mahmoud", price: "$600", teams: ['team-01.png', 'team-02.png'], status: "Completed" },
+    { name: "Sayed Website", finishDate: new Date(2022, 10, 7), client: "Sayed", price: "	$300", teams: ['team-01.png', 'team-02.png'], status: "Rejected" },
+    { name: "Arena Application", finishDate: new Date(2022, 10, 8), client: "	Arena Company", price: "$2600", teams: ['team-01.png', 'team-02.png'], status: "Completed" },
+  ]
 }
 
-//				 	
 /*
 <tr>
       <img src="imgs/team-01.png" alt="" />
       <img src="imgs/team-02.png" alt="" />
       <img src="imgs/team-03.png" alt="" />
       <img src="imgs/team-05.png" alt="" />
-    <span class="label btn-shape bg-orange c-white">Pending</span>
+    <span class="label btn-shape bg-orange ">Pending</span>
     
     <img src="imgs/team-01.png" alt="" />
     <img src="imgs/team-02.png" alt="" />

@@ -3,9 +3,9 @@ export interface Employees {
 
 
     name: string,
-    finishDate: string,
+    finishDate: Date,
     client: string,
     price: string,
-    team?: any,
+    teams: string[],
     status: string
 }

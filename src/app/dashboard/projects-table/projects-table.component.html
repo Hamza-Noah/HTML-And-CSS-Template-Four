@@ -15,11 +15,22 @@
             <tbody>
                 <tr *ngFor="let employee of employees">
                     <td>{{employee.name}}</td>
-                    <td>{{employee.finishDate}}</td>
+                    <td>{{employee.finishDate | date:'d MMM y'}}</td>
                     <td>{{employee.client}}</td>
                     <td>{{employee.price}}</td>
-                    <td>{{employee.team}}</td>
-                    <td [ngClass]="">{{employee.status}}</td>
+                    <td>
+                        <img *ngFor="let image of employee.teams" [src]="path+image" alt="">
+                    </td>
+                    <td>
+                        <span class="label btn-shape c-white" [ngClass]="{
+                            'bg-orange': employee.status === 'Pending',
+                            'bg-blue': employee.status === 'In Progress',
+                            'bg-green': employee.status === 'Completed',
+                            'bg-red': employee.status === 'Rejected'
+                        }">
+                            {{employee.status}}
+                        </span>
+                    </td>
                 </tr>
             </tbody>
         </table>

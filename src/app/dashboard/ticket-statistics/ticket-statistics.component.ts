@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-tweet-statistics',
-  templateUrl: './tweet-statistics.component.html',
-  styleUrls: ['./tweet-statistics.component.scss']
+  selector: 'app-ticket-statistics',
+  templateUrl: './ticket-statistics.component.html',
+  styleUrls: ['./ticket-statistics.component.html']
 })
 export class TweetStatisticsComponent implements OnInit {
 

@@ -15,7 +15,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { WelcomeComponent } from './dashboard/welcome/welcome.component';
 import { QuickDraftComponent } from './dashboard/quick-draft/quick-draft.component';
 import { TagetsWidgetComponent } from './dashboard/tagets-widget/tagets-widget.component';
-import { TweetStatisticsComponent } from './dashboard/tweet-statistics/tweet-statistics.component';
+import { TweetStatisticsComponent } from './dashboard/ticket-statistics/ticket-statistics.component';
 import { LatestNewsComponent } from './dashboard/latest-news/latest-news.component';
 import { TasksWidgetComponent } from './dashboard/tasks-widget/tasks-widget.component';
 import { TopSearchWidgetComponent } from './dashboard/top-search-widget/top-search-widget.component';
