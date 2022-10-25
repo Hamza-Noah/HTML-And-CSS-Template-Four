@@ -1,7 +1,4 @@
 export interface Employees {
-
-
-
     name: string,
     finishDate: Date,
     client: string,
