@@ -11,7 +11,8 @@ const routes: Routes = [
   {path: "settings", component: SettingsPageComponent},
   {path: "profile", component: ProfilePageComponent},
   {path: "projects", component: ProjectsPageComponent},
-  {path: "courses", component: CoursesComponent}
+  {path: "courses", component: CoursesComponent},
+  {path: "**", component: DashboardComponent}
 ];
 
 @NgModule({
