@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {LatestNews} from "../../interfaces/latest-news"
+
+
 
 @Component({
   selector: 'app-latest-news',
