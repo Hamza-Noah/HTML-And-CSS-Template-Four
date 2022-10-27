@@ -1,1 +1,25 @@
-<p>projects works!</p>
+<div class="project bg-white p-20 rad-6 p-relative">
+  <span class="date fs-13 c-grey">{{projectData?.date | date:'d MMM y'}}</span>
+  <h4 class="m-0">{{projectData?.title}}</h4>
+  <p class="c-grey mt-10 mb-10 fs-14">
+    {{projectData?.info}}</p>
+  <div class="team">
+    <a *ngFor="let image of projectData?.images" href="#"><img [src]="source + image" alt="" /></a>
+  </div>
+  <div class="do d-flex">
+    <span *ngFor="let tag of projectData?.tags" class="fs-13 rad-6 bg-eee">{{tag}}</span>
+  </div>
+  <div class="info between-flex">
+    <div class="prog bg-eee">
+      <span [style.width]="projectData?.percent" [ngClass]="{
+          'bg-red': +(projectData?.percent?.replace('%', '') ?? '0') < 60,
+          'bg-green': +(projectData?.percent?.replace('%', '') ?? '0') > 60,
+          'bg-blue': +(projectData?.percent?.replace('%', '') ?? '0') > 80
+        }"></span>
+    </div>
+    <div class="fs-14 c-grey">
+      <i class="fa-solid fa-dollar-sign"></i>
+      {{projectData?.price}}
+    </div>
+  </div>
+</div>

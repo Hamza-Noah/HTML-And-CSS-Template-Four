@@ -28,34 +28,3 @@ export class ProjectsTableComponent implements OnInit {
     { name: "Arena Application", finishDate: new Date(2022, 10, 8), client: "	Arena Company", price: "$2600", teams: ['team-01.png', 'team-02.png'], status: "Completed" },
   ]
 }
-
-/*
-<tr>
-      <img src="imgs/team-01.png" alt="" />
-      <img src="imgs/team-02.png" alt="" />
-      <img src="imgs/team-03.png" alt="" />
-      <img src="imgs/team-05.png" alt="" />
-    <span class="label btn-shape bg-orange ">Pending</span>
-    
-    <img src="imgs/team-01.png" alt="" />
-    <img src="imgs/team-02.png" alt="" />
-    <img src="imgs/team-05.png" alt="" />
-<td><span class="label btn-shape bg-blue c-white">In Progress</span></td>
-
-    <img src="imgs/team-02.png" alt="" />
-    <img src="imgs/team-03.png" alt="" />
-<td><span class="label btn-shape bg-green c-white">Completed</span></td>
-    <img src="imgs/team-01.png" alt="" />
-    <img src="imgs/team-02.png" alt="" />
-<td><span class="label btn-shape bg-green c-white">Completed</span></td>
-
-<img src="imgs/team-01.png" alt="" />
-    <img src="imgs/team-03.png" alt="" />
-<td><span class="label btn-shape bg-red c-white">Rejected</span></td>
-
-<img src="imgs/team-01.png" alt="" />
-    <img src="imgs/team-02.png" alt="" />
-    <img src="imgs/team-03.png" alt="" />
-    <img src="imgs/team-04.png" alt="" />
-<td><span class="label btn-shape bg-green c-white">Completed</span></td>
-*/

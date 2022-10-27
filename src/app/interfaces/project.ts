@@ -4,6 +4,6 @@ export interface Project {
     info: string;
     images: string[];
     tags: string[];
-    percent: number
+    percent: string
     price: number
 }
