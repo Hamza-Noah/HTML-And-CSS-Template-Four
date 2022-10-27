@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SetteingsComponent } from './dashboard/setteings/setteings.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
-import { ProjectsComponent } from './dashboard/projects/projects.component';
+import { ProjectsComponent } from './projects-page/projects/projects.component';
 import { CoursesComponent } from './dashboard/courses/courses.component';
 import { FriendsComponent } from './dashboard/friends/friends.component';
 import { FilesComponent } from './dashboard/files/files.component';
