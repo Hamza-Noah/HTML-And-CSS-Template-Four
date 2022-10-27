@@ -2,90 +2,106 @@
 @import "../../../assets/framework.scss";
 
 .project .date {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-  }
-  .project h4 {
-    font-weight: normal;
-  }
-  .project .team {
-    position: relative;
-    min-height: 80px;
-  }
-  .project .team a {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
-  .project .team a:nth-child(2) {
-    left: 25px;
-  }
-  .project .team a:nth-child(3) {
-    left: 50px;
-  }
-  .project .team a:nth-child(4) {
-    left: 75px;
-  }
-  .project .team a:nth-child(5) {
-    left: 100px;
-  }
-  .project .team a:hover {
-    z-index: 1000;
-  }
-  .project .team img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid white;
-  }
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.project h4 {
+  font-weight: normal;
+}
+
+.project .team {
+  position: relative;
+  min-height: 80px;
+}
+
+.project .team a {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.project .team a:nth-child(2) {
+  left: 25px;
+}
+
+.project .team a:nth-child(3) {
+  left: 50px;
+}
+
+.project .team a:nth-child(4) {
+  left: 75px;
+}
+
+.project .team a:nth-child(5) {
+  left: 100px;
+}
+
+.project .team a:hover {
+  z-index: 1000;
+}
+
+.project .team img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.project .do {
+  justify-content: flex-end;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+@media (max-width: 767px) {
   .project .do {
-    justify-content: flex-end;
-    border-top: 1px solid #eee;
-    padding-top: 15px;
-    margin-top: 15px;
+    flex-direction: column;
   }
-  @media (max-width: 767px) {
-    .project .do {
-      flex-direction: column;
-    }
+}
+
+.project .do span {
+  padding: 3px 8px;
+  margin-left: 5px;
+  width: fit-content;
+}
+
+@media (max-width: 767px) {
+  .project .do span:not(:last-child) {
+    margin-bottom: 15px;
   }
-  .project .do span {
-    padding: 3px 8px;
-    margin-left: 5px;
-    width: fit-content;
-  }
-  @media (max-width: 767px) {
-    .project .do span:not(:last-child) {
-      margin-bottom: 15px;
-    }
-  }
+}
+
+.project .info {
+  border-top: 1px solid #eee;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+@media (max-width: 767px) {
   .project .info {
-    border-top: 1px solid #eee;
-    margin-top: 15px;
-    padding-top: 15px;
+    flex-direction: column;
   }
-  @media (max-width: 767px) {
-    .project .info {
-      flex-direction: column;
-    }
-  }
+}
+
+.project .prog {
+  height: 8px;
+  width: 260px;
+  position: relative;
+  border-radius: 6px;
+}
+
+@media (max-width: 767px) {
   .project .prog {
-    height: 8px;
-    width: 260px;
-    position: relative;
-    border-radius: 6px;
+    margin-bottom: 15px;
   }
-  @media (max-width: 767px) {
-    .project .prog {
-      margin-bottom: 15px;
-    }
-  }
-  .project .prog span {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    border-radius: 6px;
-  }
-  
+}
+
+.project .prog span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 6px;
+}
