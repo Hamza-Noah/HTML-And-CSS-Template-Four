@@ -1,65 +1,15 @@
 <div class="latest-uploads h-100">
     <h2 class="mt-0">Latest Uploads</h2>
     <ul class="m-0 p-0">
-        <li class="d-flex justify-content-between align-items-center">
+        <li *ngFor="let upload of uploads" class="d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
-                <img src="assets/images/pdf.svg" alt="" />
+                <img [src]="imgPath+upload.imgSrc" alt="" />
                 <div>
-                    <span class="d-block">my-file.pdf</span>
-                    <span class="name">Elzero</span>
+                    <span class="d-block">{{upload.title}}</span>
+                    <span class="name">{{upload.userName}}</span>
                 </div>
             </div>
-            <div class="">2.9mb</div>
-        </li>
-        <li class="d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-                <img src="assets/images/avi.svg" alt="" />
-                <div>
-                    <span class="d-block">My-Video-File.avi</span>
-                    <span class="name">Admin</span>
-                </div>
-            </div>
-            <div class="">4.9mb</div>
-        </li>
-        <li class="d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-                <img src="assets/images/psd.svg" alt="" />
-                <div>
-                    <span class="d-block">My-Psd-File.pdf</span>
-                    <span class="name">Osama</span>
-                </div>
-            </div>
-            <div class="">4.5mb</div>
-        </li>
-        <li class="d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-                <img src="assets/images/zip.svg" alt="" />
-                <div>
-                    <span class="d-block">My-Zip-File.pdf</span>
-                    <span class="name">User</span>
-                </div>
-            </div>
-            <div class="">8.9mb</div>
-        </li>
-        <li class="d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-                <img src="assets/images/dll.svg" alt="" />
-                <div>
-                    <span class="d-block">My-DLL-File.pdf</span>
-                    <span class="name">Admin</span>
-                </div>
-            </div>
-            <div class="">4.9mb</div>
-        </li>
-        <li class="d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-                <img src="assets/images/eps.svg" alt="" />
-                <div>
-                    <span class="d-block">My-Eps-File.pdf</span>
-                    <span class="name">Designer</span>
-                </div>
-            </div>
-            <div class="">8.9mb</div>
+            <div class="">{{upload.size}}mb</div>
         </li>
     </ul>
 </div>
