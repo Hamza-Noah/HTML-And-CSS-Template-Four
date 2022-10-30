@@ -1,31 +1,11 @@
 <div class="search-items h-100">
-    <h2 class="mt-0">Top Search Items</h2>
-    <div class="items-head d-flex justify-content-between">
-      <div>Keyword</div>
-      <div>Search Count</div>
-    </div>
-    <div class="items d-flex justify-content-between">
-      <span>Programming</span>
-      <span class="btn-shape">220</span>
-    </div>
-    <div class="items d-flex justify-content-between">
-      <span>JavaScript</span>
-      <span class="btn-shape">180</span>
-    </div>
-    <div class="items d-flex justify-content-between">
-      <span>PHP</span>
-      <span class="btn-shape">160</span>
-    </div>
-    <div class="items d-flex justify-content-between">
-      <span>Code</span>
-      <span class="btn-shape">145</span>
-    </div>
-    <div class="items d-flex justify-content-between">
-      <span>Design</span>
-      <span class="btn-shape">110</span>
-    </div>
-    <div class="items d-flex justify-content-between">
-      <span>Logic</span>
-      <span class="btn-shape">95</span>
-    </div>
+  <h2 class="mt-0">Top Search Items</h2>
+  <div class="items-head d-flex justify-content-between">
+    <div>Keyword</div>
+    <div>Search Count</div>
   </div>
+  <div *ngFor="let item of topSearch" class="items d-flex justify-content-between">
+    <span>{{item.keyWord}}</span>
+    <span class="btn-shape">{{item.count}}</span>
+  </div>
+</div>
