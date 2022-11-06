@@ -1,5 +1,5 @@
 <div class="courses-page d-grid m-20 gap-20">
-    <div class="course bg-white rad-6 p-relative">
+    <!-- <div class="course bg-white rad-6 p-relative">
         <img class="cover" src="imgs/course-01.jpg" alt="" />
         <img class="instructor" src="imgs/team-01.png" alt="" />
         <div class="p-20">
@@ -153,6 +153,27 @@
             <span class="title bg-blue c-white btn-shape">Course Info</span>
             <span class="c-grey"> <i class="fa-regular fa-user"></i> 950</span>
             <span class="c-grey"><i class="fa-solid fa-dollar-sign"></i> 250</span>
+        </div>
+    </div> -->
+    <div class="course bg-white rad-6 p-relative" *ngFor="let course of courses">
+        <img class="cover" [src]="imageSource + course.cover" alt="" />
+        <img class="instructor" src="imgs/" alt="" />
+        <div class="p-20">
+            <h4 class="m-0">Mastering Web Design</h4>
+            <p class="description c-grey mt-15 fs-14">
+                Master The Art Of Web Designing And Mocking, Prototyping And Creating Web Design Architecture
+            </p>
+        </div>
+        <div class="info p-15 p-relative between-flex">
+            <span class="title bg-blue c-white btn-shape">Course Info</span>
+            <span class="c-grey">
+                <i class="fa-regular fa-user"></i>
+                950
+            </span>
+            <span class="c-grey">
+                <i class="fa-solid fa-dollar-sign"></i>
+                165
+            </span>
         </div>
     </div>
 </div>
