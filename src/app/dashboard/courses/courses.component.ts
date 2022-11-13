@@ -7,7 +7,7 @@ import { Courses } from 'src/app/interfaces/courses';
   styleUrls: ['./courses.component.scss']
 })
 export class CoursesComponent implements OnInit {
-  imageSource: string ="assets/images/";
+  imageSource: string = "assets/images/";
 
   courses: Courses[] = [
     {
@@ -93,6 +93,10 @@ export class CoursesComponent implements OnInit {
 
   ]
 
+
+  HelloTransGender(message: string){
+    console.log(message)
+  }
   constructor() { }
 
   ngOnInit(): void {
