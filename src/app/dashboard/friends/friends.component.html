@@ -1,33 +1,33 @@
 <div class="page d-flex">
     <div class="content w-full">
         <div class="friends-page d-grid m-20 gap-20">
-            <div class="friend bg-white rad-6 p-20 p-relative">
+            <div *ngFor="let friend of friends" class="friend bg-white rad-6 p-20 p-relative">
                 <div class="contact">
                     <i class="fa-solid fa-phone"></i>
                     <i class="fa-regular fa-envelope"></i>
                 </div>
                 <div class="txt-c">
-                    <img class="rad-half mt-10 mb-10 w-100 h-100" src="imgs/friend-01.jpg" alt="" />
-                    <h4 class="m-0">Ahmed Nasser</h4>
-                    <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                    <img class="rad-half mt-10 mb-10 w-100 h-100" [src]="imgSrc + friend.avatar" alt="" />
+                    <h4 class="m-0">{{friend.name}}</h4>
+                    <p class="c-grey fs-13 mt-5 mb-0">{{friend.profession}}</p>
                 </div>
                 <div class="icons fs-14 p-relative">
                     <div class="mb-10">
                         <i class="fa-regular fa-face-smile fa-fw"></i>
-                        <span>99 Friend</span>
+                        <span>{{friend.friends}} Friend</span>
                     </div>
                     <div class="mb-10">
                         <i class="fa-solid fa-code-commit fa-fw"></i>
-                        <span>15 Projects</span>
+                        <span>{{friend.project}} Projects</span>
                     </div>
                     <div>
                         <i class="fa-regular fa-newspaper fa-fw"></i>
-                        <span>25 Articles</span>
+                        <span>{{friend.articles}} Articles</span>
                     </div>
                     <span class="vip fw-bold c-orange">VIP</span>
                 </div>
                 <div class="info between-flex fs-13">
-                    <span class="c-grey">Joined </span>
+                    <span class="c-grey">Joined {{friend.Joined | date:'d MMM y'}}</span>
                     <div>
                         <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
                         <a class="bg-red c-white btn-shape" href="#">Remove</a>

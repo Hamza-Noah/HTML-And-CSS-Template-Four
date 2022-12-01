@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Friends } from "../../interfaces/friends";
+import { Friend } from "../../interfaces/friend";
 
 @Component({
   selector: 'app-friends',
@@ -8,8 +8,11 @@ import { Friends } from "../../interfaces/friends";
 })
 export class FriendsComponent implements OnInit {
 
-  friends: Friends[] = [
+  imgSrc: string = "assets/images/"
+
+  friends: Friend[] = [
     {
+      avatar: "friend-01.jpg",
       name: "Ahmed Nasser",
       profession: "JavaScript Developer",
       friends: 99,
@@ -18,6 +21,7 @@ export class FriendsComponent implements OnInit {
       Joined: new Date(2021, 2, 10)
     },
     {
+      avatar: "friend-02.jpg",
       name: "Omar Fathy",
       profession: "Cloud Developer",
       friends: 30,
@@ -26,6 +30,7 @@ export class FriendsComponent implements OnInit {
       Joined: new Date(2020, 2, 8)
     },
     {
+      avatar: "friend-03.jpg",
       name: "Omar Ahmed",
       profession: "Mobile Developer",
       friends: 80,
@@ -34,6 +39,7 @@ export class FriendsComponent implements OnInit {
       Joined: new Date(2020, 2, 8)
     },
     {
+      avatar: "friend-04.jpg",
       name: "Shady Nabil",
       profession: "Back-End Developer",
       friends: 70,
@@ -42,6 +48,7 @@ export class FriendsComponent implements OnInit {
       Joined: new Date(2020, 2, 8)
     },
     {
+      avatar: "friend-05.jpg",
       name: "Mohamed Ibrahim",
       profession: "Algorithm Developer",
       friends: 80,
@@ -50,6 +57,7 @@ export class FriendsComponent implements OnInit {
       Joined: new Date(2020, 2, 8)
     },
     {
+      avatar: "friend-02.jpg",
       name: "Amr Hendawy",
       profession: "Back-End Developer",
       friends: 80,
@@ -58,6 +66,7 @@ export class FriendsComponent implements OnInit {
       Joined: new Date(2020, 2, 8)
     },
     {
+      avatar: "friend-01.jpg",
       name: "Mahmoud Adel",
       profession: "Cloud Developer",
       friends: 80,
@@ -66,6 +75,7 @@ export class FriendsComponent implements OnInit {
       Joined: new Date(2020, 2, 8)
     },
     {
+      avatar: "friend-04.jpg",
       name: "Ahmed Abuzaid",
       profession: "Content Creator",
       friends: 80,
@@ -74,6 +84,7 @@ export class FriendsComponent implements OnInit {
       Joined: new Date(2020, 2, 8)
     },
     {
+      avatar: "friend-03.jpg",
       name: "Gareeb Elshiekh",
       profession: "JavaScript Developer",
       friends: 80,
@@ -82,6 +93,7 @@ export class FriendsComponent implements OnInit {
       Joined: new Date(2020, 2, 8)
     },
     {
+      avatar: "friend-02.jpg",
       name: "Hamza Noah",
       profession: "Front-End Developer",
       friends: 80,
@@ -94,7 +106,7 @@ export class FriendsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  } 
+  }
 
 }
 

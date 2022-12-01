@@ -1,4 +1,5 @@
-export interface Friends {
+export interface Friend {
+    avatar: string;
     name: string;
     profession: string
     friends: number;
