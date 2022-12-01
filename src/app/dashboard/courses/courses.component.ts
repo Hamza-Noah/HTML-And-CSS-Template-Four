@@ -94,9 +94,6 @@ export class CoursesComponent implements OnInit {
   ]
 
 
-  HelloTransGender(message: string){
-    console.log(message)
-  }
   constructor() { }
 
   ngOnInit(): void {
