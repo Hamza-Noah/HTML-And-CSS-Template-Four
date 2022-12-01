@@ -18,7 +18,8 @@ export class FriendsComponent implements OnInit {
       friends: 99,
       project: 15,
       articles: 25,
-      Joined: new Date(2021, 2, 10)
+      Joined: new Date(2021, 2, 10),
+      vip: true
     },
     {
       avatar: "friend-02.jpg",
@@ -81,7 +82,8 @@ export class FriendsComponent implements OnInit {
       friends: 80,
       project: 20,
       articles: 18,
-      Joined: new Date(2020, 2, 8)
+      Joined: new Date(2020, 2, 8),
+      vip: true
     },
     {
       avatar: "friend-03.jpg",
@@ -90,7 +92,9 @@ export class FriendsComponent implements OnInit {
       friends: 80,
       project: 20,
       articles: 18,
-      Joined: new Date(2020, 2, 8)
+      Joined: new Date(2020, 2, 8),
+      vip: true
+
     },
     {
       avatar: "friend-02.jpg",
@@ -99,7 +103,7 @@ export class FriendsComponent implements OnInit {
       friends: 80,
       project: 20,
       articles: 18,
-      Joined: new Date(2020, 2, 8)
+      Joined: new Date(2020, 2, 8),
     }
   ]
 

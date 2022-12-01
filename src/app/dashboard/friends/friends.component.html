@@ -6,10 +6,10 @@
                     <i class="fa-solid fa-phone"></i>
                     <i class="fa-regular fa-envelope"></i>
                 </div>
-                <div class="txt-c">
-                    <img class="rad-half mt-10 mb-10 w-100 h-100" [src]="imgSrc + friend.avatar" alt="" />
+                <div class="text-center avatar">
+                    <img class="rad-half mt-10 mb-10 h-100" [src]="imgSrc + friend.avatar" alt="" />
                     <h4 class="m-0">{{friend.name}}</h4>
-                    <p class="c-grey fs-13 mt-5 mb-0">{{friend.profession}}</p>
+                    <p class="c-grey mb-0">{{friend.profession}}</p>
                 </div>
                 <div class="icons fs-14 p-relative">
                     <div class="mb-10">
@@ -24,7 +24,7 @@
                         <i class="fa-regular fa-newspaper fa-fw"></i>
                         <span>{{friend.articles}} Articles</span>
                     </div>
-                    <span class="vip fw-bold c-orange">VIP</span>
+                    <span class="vip fw-bold c-orange" *ngIf="friend.vip">VIP</span>
                 </div>
                 <div class="info between-flex fs-13">
                     <span class="c-grey">Joined {{friend.Joined | date:'d MMM y'}}</span>

@@ -25,6 +25,7 @@ import { SettingsPageComponent } from './settings-page/settings-page.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { ProjectsTableComponent } from './dashboard/projects-table/projects-table.component';
+import { FilesPageComponent } from './files-page/files-page.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { ProjectsTableComponent } from './dashboard/projects-table/projects-tabl
     SettingsPageComponent,
     ProfilePageComponent,
     ProjectsPageComponent,
-    ProjectsTableComponent
+    ProjectsTableComponent,
+    FilesPageComponent
   ],
 
   imports: [

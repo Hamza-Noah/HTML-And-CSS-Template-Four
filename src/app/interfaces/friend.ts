@@ -6,4 +6,5 @@ export interface Friend {
     project: number;
     articles: number;
     Joined: Date;
+    vip?: boolean
 }
