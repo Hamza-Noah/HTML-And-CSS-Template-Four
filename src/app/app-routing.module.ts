@@ -8,13 +8,14 @@ import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { SettingsPageComponent } from './settings-page/settings-page.component';
 
 const routes: Routes = [
-  {path: "dashboard", component: DashboardComponent},
-  {path: "settings", component: SettingsPageComponent},
-  {path: "profile", component: ProfilePageComponent},
-  {path: "projects", component: ProjectsPageComponent},
-  {path: "courses", component: CoursesComponent},
-  {path: "friends", component: FriendsComponent},
-  {path: "**", component: DashboardComponent}
+
+  { path: "dashboard", component: DashboardComponent },
+  { path: "settings", component: SettingsPageComponent },
+  { path: "profile", component: ProfilePageComponent },
+  { path: "projects", component: ProjectsPageComponent },
+  { path: "courses", component: CoursesComponent },
+  { path: "friends", component: FriendsComponent },
+  { path: "**", redirectTo: "dashboard" }
 ];
 
 @NgModule({
