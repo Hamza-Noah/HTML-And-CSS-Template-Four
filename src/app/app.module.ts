@@ -14,7 +14,7 @@ import { PlansComponent } from './dashboard/plans/plans.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { WelcomeComponent } from './dashboard/welcome/welcome.component';
 import { QuickDraftComponent } from './dashboard/quick-draft/quick-draft.component';
-import { TagetsWidgetComponent } from './dashboard/tagets-widget/tagets-widget.component';
+import { TargetsWidgetComponent } from './dashboard/targets-widget/targets-widget.component';
 import { TweetStatisticsComponent } from './dashboard/ticket-statistics/ticket-statistics.component';
 import { LatestNewsComponent } from './dashboard/latest-news/latest-news.component';
 import { TasksWidgetComponent } from './dashboard/tasks-widget/tasks-widget.component';
@@ -41,7 +41,7 @@ import { FilesPageComponent } from './files-page/files-page.component';
     SidebarComponent,
     WelcomeComponent,
     QuickDraftComponent,
-    TagetsWidgetComponent,
+    TargetsWidgetComponent,
     TweetStatisticsComponent,
     LatestNewsComponent,
     TasksWidgetComponent,
