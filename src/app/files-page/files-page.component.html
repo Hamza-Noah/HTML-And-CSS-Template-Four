@@ -1,5 +1,5 @@
-<div class="files-content d-grid gap-20">
-    <div class="file bg-white p-10 rad-10">
+<div class="files-content d-flex flex-wrap gap-20">
+    <div *ngFor="let file of files"  class="file bg-white p-10 rad-10">
         <i class="fa-solid fa-download c-grey p-absolute"></i>
         <div class="icon txt-c">
             <img class="mt-15 mb-15" src="imgs/pdf.svg" alt="" />
@@ -8,7 +8,7 @@
         <p class="c-grey fs-13">Elzero</p>
         <div class="info between-flex mt-10 pt-10 fs-13 c-grey">
             <span>20/06/2020</span>
-            <span>5.5MB</span>
+            <span>{{file.fileSize}}MB</span>
         </div>
     </div>
 </div>
