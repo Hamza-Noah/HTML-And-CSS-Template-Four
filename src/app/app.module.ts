@@ -26,6 +26,7 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { ProjectsTableComponent } from './dashboard/projects-table/projects-table.component';
 import { FilesPageComponent } from './files-page/files-page.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -52,12 +53,13 @@ import { FilesPageComponent } from './files-page/files-page.component';
     ProfilePageComponent,
     ProjectsPageComponent,
     ProjectsTableComponent,
-    FilesPageComponent
+    FilesPageComponent,
   ],
-
+  
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
