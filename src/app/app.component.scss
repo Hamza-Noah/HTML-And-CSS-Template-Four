@@ -44,11 +44,12 @@ body {
     .search {
       input[type="search"] {
         margin-left: 5px;
-        padding: 10px 10px 10px 30px;
+        padding: 10px   30px;
         border: 1px #ccc solid;
         border-radius: 10px;
         width: 160px;
         transition: width 0.3s ease-in-out;
+        color: #a9a9a9;
       }
 
       input[type="search"]:focus {

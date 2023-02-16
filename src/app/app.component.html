@@ -3,13 +3,13 @@
     <div class="content w-100 overflow-hidden">
         <div class="head bg-white d-flex align-items-center justify-content-between">
             <div class="search position-relative">
-                <input type="search" placeholder="Type a Keyword">
+                <input type="search" [(ngModel)]="searchValue">
             </div>
             <div class="icons d-flex align-items-center">
                 <span class="notification position-relative">
                     <i class="fa-regular fa-bell fa-lg"></i>
                 </span>
-                <img src="assets/images/avatar.png" alt="img">
+                <img src="assets/images/avatar.png" alt="img">  
             </div>
         </div>
         <h1 class="position-relative">
