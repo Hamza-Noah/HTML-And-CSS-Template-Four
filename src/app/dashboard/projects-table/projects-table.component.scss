@@ -1,4 +1,4 @@
-@import "../../../assets/variables.scss";
+@use "../../../assets/variables.scss" as *;
 @import "../../../assets/framework.scss";
 
 .projects .responsive-table {

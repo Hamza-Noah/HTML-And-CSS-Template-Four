@@ -1,5 +1,5 @@
-@import "../../../assets/framework.scss";
-@import "../../../assets/variables.scss";
+@use "../../../assets/framework.scss";
+@use "../../../assets/variables.scss" as *;
 
 .friends-page {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

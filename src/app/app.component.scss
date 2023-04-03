@@ -1,4 +1,4 @@
-@import "../assets/variables.scss";
+@use "../assets/variables.scss" as *;
 
 body {
   background: #0b2429;
